@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.OrangeHRM.LoginPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="com.OrangeHRM.AddemployeePageTest"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test3">
+    <classes>
+      <class name="com.OrangeHRM.EmployeepagelistTest"/>
+    </classes>
+  </test> <!-- Test3 -->
+  <test name="Test4">
+    <classes>
+      <class name="com.OrangeHRM.HomePageTest"/>
+    </classes>
+  </test> <!-- Test4 -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.OrangeHRM.AddemployeePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.AddemployeePageTest -->
+      <class name="com.OrangeHRM.EmployeepagelistTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.EmployeepagelistTest -->
+      <class name="com.OrangeHRM.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="logintest" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.LoginPageTest -->
+      <class name="com.OrangeHRM.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="extentReports"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

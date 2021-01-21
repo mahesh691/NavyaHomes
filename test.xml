@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+  <test thread-count="5" name="Test" >
+    <classes>
+      <class name="com.OrangeHRM.LoginPageTest"/>
+    </classes>
+  </test > <!-- Test -->
+  <test name="Test2">
+  	<classes>
+  		<class name="com.OrangeHRM.AddemployeePageTest"/>
+  	</classes>
+  </test>
+  <test name="Test3">
+  	<classes>
+  		 <class name="com.OrangeHRM.EmployeepagelistTest"/>
+  	</classes>
+  </test>
+  <test name="Test4">
+  	<classes>
+		<class name="com.OrangeHRM.HomePageTest"/>
+  	</classes>
+  </test>
+</suite> <!-- Suite -->
