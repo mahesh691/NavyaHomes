@@ -81,7 +81,7 @@ public LoginPageTest() {
 			TakesScreenshot	ts=(TakesScreenshot)driver;
 			File bing_ScreenShot=ts.getScreenshotAs(OutputType.FILE);
 			
-			FileUtils.copyFile(bing_ScreenShot,new File("D:\\JavaProgrammes\\Home\\mahesh\\ss\\"+getDate()+".png"));
+			FileUtils.copyFile(bing_ScreenShot,new File("E:\\JavaProgrammes\\Home\\mahesh\\ss\\"+getDate()+".png"));
 				
 				
 			}
